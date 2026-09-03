@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required documentation
+        run: |
+          test -s README.md
+          test -s docs/equipe.md
+          test -s docs/visao-produto.md
+          test -s docs/adr/0000-registro-de-decisoes.md
