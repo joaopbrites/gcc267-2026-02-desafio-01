@@ -1,5 +1,5 @@
 # Equipe ratatouile
 
-Anderson
+Anderson Fernandes Barbosa
 Guilherme Medeiros Gomes
 João Pedro Brites
